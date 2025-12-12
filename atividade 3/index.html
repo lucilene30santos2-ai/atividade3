@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival de Talentos - Inscrição</title>
+</head>
+<body>
+    <h1>Festival de Talentos - Inscrição</h1>
+    <form action="/enviar-inscricao" method="POST">
+        <h2>Dados Pessoais</h2>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seunome@email.com" required>
+        <br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+        <br><br>
+        <h2>Detalhes da Apresentação</h2>
+        <label>Tipo de Apresentação:</label>
+        <input type="radio" id="musica" name="apresentacao" value="musica">
+        <label for="musica">Música</label>
+        <input type="radio" id="danca" name="apresentacao" value="danca">
+        <label for="danca">Dança</label>
+        <input type="radio" id="teatro" name="apresentacao" value="teatro">
+        <label for="teatro">Teatro</label>
+        <br><br>
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao"></textarea>
+        <br><br>
+        <label>Equipamentos:</label>
+        <input type="checkbox" id="microfone" name="equipamentos[]" value="microfone">
+        <label for="microfone">Microfone</label>
+        <input type="checkbox" id="projetor" name="equipamentos[]" value="projetor">
+        <label for="projetor">Projetor</label>
+        <input type="checkbox" id="caixa_som" name="equipamentos[]" value="caixa_som">
+        <label for="caixa_som">Caixa de Som</label>
+        <br><br>
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+    <h2>Mídias do Festival</h2>
+    <video controls poster="poster.jpg">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        Seu navegador não suporta este vídeo.
+    </video>
+    <br><br>
+    <audio controls>
+        <source src="jingle.mp3" type="audio/mpeg">
+        <source src="jingle.ogg" type="audio/ogg">
+        Seu navegador não suporta este áudio.
+    </audio>
+    <br><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.449977130619!2d-46.64888568534722!3d-23.564407784681403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f0d1%3A0xabcc7e8f8e7e8f8e!2sRua+Vergueiro%2C+3057+-+Vila+Marian%2C+S%C3%A3o+Paulo+-+SP%2C+04110-001!5e0!3m2!1sen!2sbr!4v1634573195032!5m2!1sen!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</body>
+</html>
